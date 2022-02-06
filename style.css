@@ -63,6 +63,8 @@ hr {
 .wrapper {
 	width: 100vw;
 	min-height: calc(100vh - 2rem);
+	animation-name: animation;
+	animation-duration: 2s;
 }
 .content {
 	padding: 1rem 0.3rem;
@@ -106,6 +108,7 @@ hr {
 }
 .countdown {
 	display: flex;
+	min-height: 3rem;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
@@ -126,4 +129,12 @@ hr {
 	font-size: 0.9rem;
 	display: block;
 	margin-top: -0.6rem;
+}
+@keyframes animation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
