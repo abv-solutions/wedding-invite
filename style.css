@@ -117,13 +117,13 @@ hr {
 .countdown div {
 	font-size: 1rem;
 	font-weight: bold;
-	width: 2rem;
-	padding: 0.5rem;
+	width: 2.4rem;
+	padding-top: 0.2rem;
 	opacity: 0.85;
 }
 .countdown span {
 	font-weight: normal;
-	font-size: 0.7rem;
+	font-size: 0.9rem;
 	display: block;
-	margin-top: -0.3rem;
+	margin-top: -0.6rem;
 }
