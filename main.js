@@ -10,10 +10,10 @@ const interval = setInterval(() => {
 	const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
 	const seconds = Math.floor((distance % (1000 * 60)) / 1000)
 	countdown.innerHTML = `
-    <div>${days}<span>Zile</span></div>
-    <div>${hours}<span>Ore</span></div>
-    <div>${mins}<span>Min</span></div>
-    <div>${seconds}<span>Sec</span></div>
+    <div>${days}<span>zile</span></div>
+    <div>${hours}<span>ore</span></div>
+    <div>${mins}<span>min</span></div>
+    <div>${seconds}<span>sec</span></div>
   `
 	if (distance < 0) {
 		clearInterval(interval)
