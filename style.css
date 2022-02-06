@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-size: 1rem;
+	font-family: 'Great Vibes', sans-serif;
+	line-height: 1.6;
+	color: #86672c;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	background: url(bg.png) no-repeat center center/cover;
+}
+@supports (background-blend-mode: multiply) {
+	body {
+		background-blend-mode: multiply;
+		background-attachment: fixed;
+	}
+}
+.wrapper {
+	background-color: rgba(146, 146, 146, 0.3);
+	width: 100vw;
+	min-height: calc(100vh - 2rem);
+}
+.content {
+	height: 30rem;
+}
