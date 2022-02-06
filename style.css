@@ -114,13 +114,13 @@ hr {
 	flex-wrap: wrap;
 	border: #86672c 1px solid;
 	border-radius: 0.5rem;
-	max-width: 10rem;
+	max-width: 9rem;
 	margin: 0.5rem auto;
 }
 .countdown div {
 	font-size: 1rem;
 	font-weight: bold;
-	width: 2.2rem;
+	width: 1.8rem;
 	padding-top: 0.2rem;
 	opacity: 0.85;
 }
