@@ -25,7 +25,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1.4rem 0.5rem 1rem 0.5rem;
+	padding: 3rem 0.5rem 1rem 0.5rem;
 	background: url('images/bg.png') no-repeat center center/cover;
 }
 @supports (background-blend-mode: multiply) {
@@ -33,6 +33,14 @@ body {
 		background-blend-mode: multiply;
 		background-attachment: fixed;
 	}
+}
+.text-large {
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+}
+.text-normal {
+	font-size: 0.8rem;
+	line-height: 0.8rem;
 }
 .alt-font {
 	font-family: 'Alex Brush', sans-serif;
@@ -78,7 +86,7 @@ hr {
 	font-size: 1rem;
 }
 .shadow-element {
-	height: 7rem;
+	height: 4rem;
 }
 .cards {
 	display: flex;
