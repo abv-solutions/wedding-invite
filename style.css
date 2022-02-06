@@ -64,7 +64,7 @@ hr {
 	width: 100vw;
 	min-height: calc(100vh - 2rem);
 	animation-name: animation;
-	animation-duration: 2s;
+	animation-duration: 3s;
 }
 .content {
 	padding: 1rem 0.3rem;
@@ -120,7 +120,7 @@ hr {
 .countdown div {
 	font-size: 1rem;
 	font-weight: bold;
-	width: 2.4rem;
+	width: 2.2rem;
 	padding-top: 0.2rem;
 	opacity: 0.85;
 }
