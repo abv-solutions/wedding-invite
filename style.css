@@ -6,25 +6,18 @@
 }
 html {
 	scroll-behavior: smooth;
+	font-size: 200%;
 }
 body {
 	font-size: 1rem;
 	font-family: 'Great Vibes', sans-serif;
 	line-height: 1.6;
 	color: #86672c;
-}
-a {
-	text-decoration: none;
-}
-ul {
-	list-style: none;
-}
-body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem;
-	background: url(bg.png) no-repeat center center/cover;
+	padding: 3rem 0.5rem 1rem 0.5rem;
+	background: url('images/bg.png') no-repeat center center/cover;
 }
 @supports (background-blend-mode: multiply) {
 	body {
@@ -32,14 +25,64 @@ body {
 		background-attachment: fixed;
 	}
 }
+.alt-font {
+	font-family: 'Alex Brush', sans-serif;
+}
+a {
+	color: #578dbe;
+	font-family: 'Arial', sans-serif;
+	font-size: 0.45rem;
+}
+a i {
+	margin-right: 0.1rem;
+}
+ul {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-weight: normal;
+}
+hr {
+	color: #86672c;
+	margin: 0.5rem 0;
+	width: 150%;
+	margin-left: -25%;
+}
 .wrapper {
-	background-color: rgba(146, 146, 146, 0.1);
 	width: 100vw;
 	min-height: calc(100vh - 2rem);
 }
 .content {
-	height: 25rem;
-	margin: 1rem;
-	padding: 1rem;
-	background-color: rgba(146, 146, 146, 0.2);
+	padding: 1rem 0.3rem;
+	text-align: center;
+}
+.m-2 {
+	margin: 2rem 0;
+}
+.m-1 {
+	margin: 1rem 0;
+}
+.and {
+	margin: -0.9rem 0;
+	font-size: 1rem;
+}
+.shadow-element {
+	height: 7rem;
+}
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.img-normal {
+	width: 4rem;
+}
+.img-small {
+	width: 3rem;
+}
+.card p {
+	margin: -0.2rem 0;
 }
