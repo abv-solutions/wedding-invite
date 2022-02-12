@@ -81,6 +81,9 @@ hr {
 .m-1 {
 	margin: 1rem 0;
 }
+.m-05 {
+	margin: 0.5rem 0;
+}
 .and {
 	margin: -0.9rem 0;
 	font-size: 1rem;
@@ -146,16 +149,16 @@ input {
 	font: inherit;
 	display: block;
 	font-size: 0.7rem;
-	padding: 0.2rem;
+	padding: 0.2rem 0.5rem;
 	padding-top: 0.4rem;
 	border: 1px solid #86672c;
 	border-radius: 10px;
 	transition: all 0.2s;
 	margin-bottom: 0.3rem;
 }
-input[name='accepted'] {
-	/* display: none;
-	visibility: hidden; */
+input[name='response'] {
+	display: none;
+	visibility: hidden;
 }
 input:focus {
 	border: 2px solid #86672c;
@@ -172,16 +175,25 @@ button:focus {
 	transition: all 0.3s;
 	display: inline-block;
 	padding: 0.2rem 0.7rem;
+	padding-top: 0.3rem;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
 	font-size: 0.7rem;
 	line-height: 0.7rem;
-	background-color: #2faa5c;
 	color: white;
 }
-.btn:hover {
+.btn-primary {
+	background-color: #2faa5c;
+}
+.btn-primary:hover {
 	background-color: green;
+}
+.btn-secondary {
+	background-color: rgb(189, 57, 57);
+}
+.btn-secondary:hover {
+	background-color: red;
 }
 
 @media only screen and (min-width: 700px) {

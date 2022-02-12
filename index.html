@@ -80,27 +80,33 @@
 				<p class="text-normal m-1">
 					Vă rugăm să ne confirmaţi prezenţa până la data de 01.07.2022
 				</p>
-				<form class="form" name="name" method="POST" data-netlify="true">
+				<form
+					class="form"
+					name="confirmation"
+					method="POST"
+					data-netlify="true"
+				>
 					<div class="form-group">
 						<input type="text" name="name" placeholder="Nume" required />
 						<input
-							class="hidden"
-							type="checkbox"
-							name="accepted"
-							placeholder="Accepted"
+							type="text"
+							name="response"
+							placeholder="Response"
+							value="Confirm"
+							disabled="true"
 							checked
 						/>
 					</div>
 					<div>
 						<button type="submit" name="accept" class="btn btn-primary">
-							<i class="fas fa-envelope pr-1"></i>
+							<i class="fas fa-check"></i>
 						</button>
-						<button type="submit" name="refuse" class="btn btn-primary">
-							<i class="fas fa-envelope pr-1"></i>
+						<button type="submit" name="refuse" class="btn btn-secondary">
+							<i class="fas fa-times"></i>
 						</button>
 					</div>
 				</form>
-				<p class="text-normal m-1">Sau la numerele de telefon</p>
+				<p class="text-normal m-05">Sau la numerele de telefon</p>
 				<p class="text-normal">
 					<a target="_blank" href="https://wa.me/+40748239714" class="telephone"
 						><i class="fab fa-whatsapp"></i>Deni</a
