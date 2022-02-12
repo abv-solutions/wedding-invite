@@ -2,6 +2,12 @@ const countdown = document.querySelector('.countdown')
 const refuseButton = document.querySelector('.btn-secondary')
 const nameInput = document.querySelector('[name="name"]')
 const hiddenInput = document.querySelector('[name="response"]')
+const { API_KEY } = process.env
+
+let script = document.createElement('script')
+script.src = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&callback=initMap&libraries=&v=weekly`
+script.async = true
+document.head.appendChild(script)
 
 const launchDate = new Date('Jul 16, 2022, 11:20:00').getTime()
 
