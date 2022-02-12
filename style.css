@@ -152,11 +152,10 @@ hr {
 	align-items: center;
 }
 input {
-	font: inherit;
 	display: inline;
-	font-size: 0.7rem;
+	font-size: 0.5rem;
 	padding: 0.2rem 0.5rem;
-	padding-top: 0.4rem;
+	padding-top: 0.3rem;
 	border: 1px solid #86672c;
 	border-radius: 10px;
 	height: 1.5rem;
@@ -199,10 +198,10 @@ button:focus {
 	color: white;
 }
 .btn-primary {
-	background-color: #2faa5c;
+	background-color: green;
 }
 .btn-primary:hover {
-	background-color: green;
+	background-color: #18e663;
 }
 .btn-secondary {
 	background-color: rgb(189, 57, 57);
