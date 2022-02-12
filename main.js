@@ -32,7 +32,7 @@ refuseButton.addEventListener('click', changeResponse)
 
 function changeResponse() {
 	if (nameInput.value) {
-		hiddenInput.checked = false
+		hiddenInput.value = 'Refuse'
 		console.log(refuseButton, hiddenInput, nameInput)
 	}
 }
