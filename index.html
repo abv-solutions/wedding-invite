@@ -37,7 +37,7 @@
 				<p class="text-normal m-1">Vă invităm să ne fiţi alături în data de</p>
 				<h2>16 Iulie 2022</h2>
 				<div class="countdown"></div>
-				<div class="cards m-1">
+				<div class="cards m-2">
 					<div class="card card-1">
 						<img
 							class="img-normal"
@@ -49,8 +49,9 @@
 						<p>Parcul Central</p>
 						<p>Cluj-Napoca</p>
 						<a target="_blank" href="https://goo.gl/maps/FSzCg8rEChMJqFJL8"
-							><i class="fas fa-map-marker-alt"></i>Hartă</a
+							><i class="fas fa-map-marker-alt"></i>Google Maps</a
 						>
+						<div id="map1"></div>
 						<hr />
 					</div>
 					<div class="card card-2">
@@ -60,8 +61,9 @@
 						<p>Ponton</p>
 						<p>Wonderland</p>
 						<a target="_blank" href="https://goo.gl/maps/NRx8frTiVwkS8X3F7"
-							><i class="fas fa-map-marker-alt"></i>Hartă</a
+							><i class="fas fa-map-marker-alt"></i>Google Maps</a
 						>
+						<div id="map2"></div>
 					</div>
 					<div class="card card-3">
 						<hr />
@@ -71,13 +73,14 @@
 						<p>Sala Orhideea</p>
 						<p>Wonderland</p>
 						<a target="_blank" href="https://goo.gl/maps/NRx8frTiVwkS8X3F7"
-							><i class="fas fa-map-marker-alt"></i>Hartă</a
+							><i class="fas fa-map-marker-alt"></i>Google Maps</a
 						>
+						<div id="map3"></div>
 						<hr />
 					</div>
 				</div>
-				<p class="text-medium m-1">Vă așteptăm cu drag!</p>
-				<p class="text-normal m-05">
+				<p class="text-medium m-2">Vă așteptăm cu drag!</p>
+				<p class="confirm-message text-normal m-05">
 					Vă rugăm să ne confirmaţi prezenţa până la data de 01.07.2022
 				</p>
 				<form
@@ -87,7 +90,14 @@
 					data-netlify="true"
 				>
 					<div class="form-group">
-						<input type="text" name="name" placeholder="Nume" required />
+						<input type="text" name="name" placeholder="Nume" required /><input
+							type="number"
+							name="number"
+							placeholder="Nr. persoane"
+							required
+							min="1"
+							max="5"
+						/>
 						<input
 							type="text"
 							value="Accept"
@@ -109,16 +119,22 @@
 					<a target="_blank" href="https://wa.me/+40748239714" class="telephone"
 						><i class="fab fa-whatsapp"></i>Deni</a
 					>
+					- 0748239714
 				</p>
 				<p class="text-normal">
 					<a target="_blank" href="https://wa.me/+40756492647" class="telephone"
 						><i class="fab fa-whatsapp"></i><span class="alt-font">A</span
 						><span>ndrei</span></a
 					>
+					- 0756492647
 				</p>
 			</div>
 			<div class="shadow-element"></div>
 		</div>
 		<script src="main.js"></script>
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFWhHYVtOTYMSOZX53YvyZfP6XRXexi7o&callback=initMap&libraries=&v=weekly"
+			async
+		></script>
 	</body>
 </html>

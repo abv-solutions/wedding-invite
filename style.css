@@ -78,6 +78,9 @@ hr {
 	padding: 1rem 0.3rem;
 	text-align: center;
 }
+.m-2 {
+	margin: 1.5rem 0;
+}
 .m-1 {
 	margin: 1rem 0;
 }
@@ -121,8 +124,8 @@ hr {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	border: #86672c 1px solid;
-	border-radius: 0.5rem;
+	border-top: #86672c 1px solid;
+	border-bottom: #86672c 1px solid;
 	max-width: 9rem;
 	margin: 0.5rem auto;
 }
@@ -139,7 +142,10 @@ hr {
 	display: block;
 	margin-top: -0.6rem;
 }
-
+.text-medium {
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+}
 .form {
 	display: flex;
 	flex-direction: column;
@@ -147,12 +153,13 @@ hr {
 }
 input {
 	font: inherit;
-	display: block;
+	display: inline;
 	font-size: 0.7rem;
 	padding: 0.2rem 0.5rem;
 	padding-top: 0.4rem;
 	border: 1px solid #86672c;
 	border-radius: 10px;
+	height: 1.5rem;
 	transition: all 0.2s;
 	margin-bottom: 0.3rem;
 }
@@ -160,7 +167,15 @@ input[name='response'] {
 	display: none;
 	visibility: hidden;
 }
-input:focus {
+input[name='name'] {
+	width: 6rem;
+}
+input[name='number'] {
+	width: 4.6rem;
+	margin-left: 0.2rem;
+}
+input[type='text']:focus,
+input[type='number']:focus {
 	border: 2px solid #86672c;
 	transform: scale(1.02);
 	outline: 0 none;
@@ -194,6 +209,13 @@ button:focus {
 }
 .btn-secondary:hover {
 	background-color: red;
+}
+#map1,
+#map2,
+#map3 {
+	width: 5.25rem;
+	height: 3rem;
+	margin: 0 auto;
 }
 
 @media only screen and (min-width: 700px) {
